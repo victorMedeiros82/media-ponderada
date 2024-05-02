@@ -40,21 +40,30 @@
     <script>
     
         let button = document.querySelector("#botao_verificar");
-        let n1 = document.querySelector('#n1').value
-        let n2 = document.querySelector('#n2').value
-        let n3 = document.querySelector('#n3').value
-        let n4 = document.querySelector('#n4').value
-        let p1 = document.querySelector('#p1').value
-        let p2 = document.querySelector('#p2').value
-        let p3 = document.querySelector('#p3').value
-        let p4 = document.querySelector('#p4').value
-        let presenca = document.querySelector('#presenca').value
+        let inputn1 = document.querySelector('#n1')
+        let inputn2 = document.querySelector('#n2')
+        let inputn3 = document.querySelector('#n3')
+        let inputn4 = document.querySelector('#n4')
+        let inputp1 = document.querySelector('#p1')
+        let inputp2 = document.querySelector('#p2')
+        let inputp3 = document.querySelector('#p3')
+        let inputp4 = document.querySelector('#p4')
+        let inputpresenca = document.querySelector('#presenca')
 
         button.addEventListener("click", verificar);
 
-        function verificar(){               // TODO.3:
-            let media = ;                 // Corrija esta linha..
-            let resultado = "Aprovado";     // ... e esta de modo a realizar
+        function verificar(){
+            n1 = inputn1.value               
+            n2 = inputn2.value               
+            n3 = inputn3.value               
+            n4 = inputn4.value               
+            p1 = inputp1.value               
+            p2 = inputp2.value               
+            p3 = inputp3.value               
+            p4 = inputp4.value
+            presenca = inputpresenca.value               
+            let media = calculaMedia(n1, n2, n3, n4, p1 = 1, p2 = 1, p3 = 1, p4 = 1)
+            let resultado = verificaAprovacao(media, presenca = 0.75);     // ... e esta de modo a realizar
                                             // o cálculo da média corretamente.         
             document.querySelector("#media").textContent = media;
             document.querySelector("#resultado").textContent = resultado;
