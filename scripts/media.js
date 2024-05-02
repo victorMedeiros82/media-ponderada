@@ -3,6 +3,11 @@ function calculaMedia(n1, n2, n3, n4, p1 = 1, p2 = 1, p3 = 1, p4 = 1) {
 }
 
 function verificaAprovacao(media, presenca = 0.75) {
+//    if (media>=7&&presenca>=0.75) {
+//         return "Aprovado"
+//    } else {
+//         return "Reprovado"
+//    }
     return media >= 7 && presenca >= 0.75
 }
 
