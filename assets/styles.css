@@ -1,5 +1,5 @@
 body{
-  background: linear-gradient(180deg, rgb(187, 154, 202) 50%, rgba(97,226,192,1) 100%);
+  background: linear-gradient(180deg, rgba(137,94,162,1) 5%, rgba(197,168,218,1) 40%, rgba(255,255,255,1) 69%, rgba(97,226,192,1) 88%);
   background-size: cover;
   height: 50vw;
 }
@@ -13,5 +13,6 @@ input {
 }
 h1{
   text-align: center;
+  text-transform: uppercase;
   font-family:sans-serif;
 }
