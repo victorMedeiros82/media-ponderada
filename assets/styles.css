@@ -1,18 +1,39 @@
+html{
+  min-height: 100%;
+}
+*{
+  font-family:sans-serif;
+  }
 body{
   background: linear-gradient(180deg, rgba(137,94,162,1) 5%, rgba(197,168,218,1) 40%, rgba(255,255,255,1) 69%, rgba(97,226,192,1) 88%);
-  background-size: cover;
-  height: 50vw;
 }
-
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
 label {
   display: block;
+  text-transform: uppercase;
 }
 
 input {
   margin: 8px;
 }
-h1{
+fieldset{
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+#btn{
   text-align: center;
-  text-transform: uppercase;
-  font-family:sans-serif;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+#botao_verificar{
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-style: none;
 }
