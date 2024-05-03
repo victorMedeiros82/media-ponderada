@@ -1,7 +1,17 @@
+body{
+  background: linear-gradient(180deg, rgb(187, 154, 202) 50%, rgba(97,226,192,1) 100%);
+  background-size: cover;
+  height: 50vw;
+}
+
 label {
   display: block;
 }
 
 input {
   margin: 8px;
+}
+h1{
+  text-align: center;
+  font-family:sans-serif;
 }

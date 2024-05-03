@@ -13,62 +13,31 @@
 <body>
     <div id="main">
         <h1>Média Ponderada</h1>
-
+        
         <form action="verificar">
             <fieldset>
                 <label for="n1">Nota 1:<input type="text" id="n1" min="0" max="10"/></label>
                 <label for="n2">Nota 2:<input type="text" id="n2" /></label>
                 <label for="n3">Nota 3:<input type="text" id="n3" /></label>
                 <label for="n4">Nota 4:<input type="text" id="n4" /></label>
-
+                
                 <label for="p1">Peso 1:<input type="text" id="p1" /></label>
                 <label for="p2">Peso 2:<input type="text" id="p2" /></label>
                 <label for="p3">Peso 3:<input type="text" id="p3" /></label>
                 <label for="p4">Peso 4:<input type="text" id="p4" /></label>
-
+                
                 <label for="presenca">
                     Presença: <input placeholder="0.75" type="number" min="0" max="1" step="0.01" id="presenca">
                 </label>
             </fieldset>
             <input id="botao_verificar" type="button" value="Verificar Situação"></input>
         </form>
-
+        
         <p>Média: <span id="media"></span></p>
         <p>Situação: <span id="resultado"></span></p>
     </div>
+    <script src="main.js"></script>
     <script src="./scripts/media.js"></script>
-    <script>
-    
-        let button = document.querySelector("#botao_verificar");
-        let inputn1 = document.querySelector('#n1')
-        let inputn2 = document.querySelector('#n2')
-        let inputn3 = document.querySelector('#n3')
-        let inputn4 = document.querySelector('#n4')
-        let inputp1 = document.querySelector('#p1')
-        let inputp2 = document.querySelector('#p2')
-        let inputp3 = document.querySelector('#p3')
-        let inputp4 = document.querySelector('#p4')
-        let inputpresenca = document.querySelector('#presenca')
-
-        button.addEventListener("click", verificar);
-
-        function verificar(){
-            n1 = inputn1.value               
-            n2 = inputn2.value               
-            n3 = inputn3.value               
-            n4 = inputn4.value               
-            p1 = inputp1.value               
-            p2 = inputp2.value               
-            p3 = inputp3.value               
-            p4 = inputp4.value
-            presenca = inputpresenca.value               
-            let media = calculaMedia(n1, n2, n3, n4, p1 = 1, p2 = 1, p3 = 1, p4 = 1)
-            let resultado = verificaAprovacao(media, presenca = 0.75);     // ... e esta de modo a realizar
-                                            // o cálculo da média corretamente.         
-            document.querySelector("#media").textContent = media;
-            document.querySelector("#resultado").textContent = resultado;
-        }
-    </script>
 </body>
 
 </html>
