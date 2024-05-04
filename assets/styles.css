@@ -1,39 +1,59 @@
-html{
+html {
   min-height: 100%;
 }
-*{
-  font-family:sans-serif;
-  }
-body{
-  background: linear-gradient(180deg, rgba(137,94,162,1) 5%, rgba(197,168,218,1) 40%, rgba(255,255,255,1) 69%, rgba(97,226,192,1) 88%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-h1{
-  text-align: center;
-  text-transform: uppercase;
+
+body {
+  background: linear-gradient(180deg, rgba(137, 94, 162, 1) 5%, rgba(197, 168, 218, 1) 40%, rgba(255, 255, 255, 1) 69%, rgba(97, 226, 192, 1) 88%);
 }
-label {
-  display: block;
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+header {
   text-transform: uppercase;
 }
 
-input {
-  margin: 8px;
+fieldset {
+  padding: 10px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
 }
-fieldset{
-  width: 300px;
-  display: block;
-  margin: 0 auto;
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-#btn{
-  text-align: center;
-  display: block;
-  width: 300px;
-  margin: 0 auto;
+
+label {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }
-#botao_verificar{
-  width: 300px;
-  height: 40px;
-  border-radius: 5px;
+
+
+#botao_verificar {
+  text-transform: uppercase;
+  padding: 15px;
   cursor: pointer;
-  border-style: none;
+}
+
+#resultadoEsperado {
+  background-color: red;
+  display: flex;
+  gap: 20px;
 }

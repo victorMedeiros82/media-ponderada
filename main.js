@@ -18,4 +18,3 @@ function verificar() {
   document.querySelector("#media").textContent = media;
   document.querySelector("#resultado").textContent = resultado;   
 }
-console.log(verificar())
