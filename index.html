@@ -22,25 +22,29 @@
         <form id="formulario" action="verificar">
             <fieldset>
                 <!--notas-->
-                <label for="n2">Nota 1:<input type="number" min="0" max="10" id="n2" /></label>
-                <label for="n1">Nota 2:<input type="number" min="0" max="10" id="n1" /></label>
-                <label for="n3">Nota 3:<input type="number" min="0" max="10" id="n3" /></label>
-                <label for="n4">Nota 4:<input type="number" min="0" max="10" id="n4" /></label>
-                <!--pesos-->
-                <label for="p1">Peso 1:<input type="number" min="1" id="p1" /></label>
-                <label for="p2">Peso 2:<input type="number" min="1" id="p2" /></label>
-                <label for="p3">Peso 3:<input type="number" min="1" id="p3" /></label>
-                <label for="p4">Peso 4:<input type="number" min="1" id="p4" /></label>
-                <!--presença-->
-                <label for="presenca">Presença: <input placeholder="0.75" type="number" min="0" max="1" step="0.01"
-                        id="presenca"></label>
+                <div id="nota">
+                    <label for="n1">Nota 1:<input type="number" min="0" max="10" id="n1" /></label>
+                    <label for="p1">Peso 1:<input type="number" min="1" id="p1" /></label>
+                </div>
+                <div id="nota">
+                    <label for="n2">Nota 2:<input type="number" min="0" max="10" id="n2" /></label>
+                    <label for="p2">Peso 2:<input type="number" min="1" id="p2" /></label>
+                </div>
+                <div id="nota">
+                    <label for="n3">Nota 3:<input type="number" min="0" max="10" id="n3" /></label>
+                    <label for="p3">Peso 3:<input type="number" min="1" id="p3" /></label>
+                </div>
+                <div id="nota">
+                    <label for="n4">Nota 4:<input type="number" min="0" max="10" id="n4" /></label>
+                    <label for="p4">Peso 4:<input type="number" min="1" id="p4" /></label>
+                </div>
+                <div id="presencca">
+                    <label for="presenca">Presença: <input placeholder="0.75" type="number" min="0" max="1" step="0.01"
+                            id="presenca"></label>
+                </div>
             </fieldset><!--FIELDSET-->
             <input id="botao_verificar" type="button" value="Verificar Situação"></input>
         </form><!--FORMULARIO-->
-        <div id="resultadoEsperado">
-            <p>Média: <span id="media"></span></p>
-            <p>Situação: <span id="resultado"></span></p>
-        </div><!--RESULTADO-->
     </div><!--main-->
     <script src="main.js"></script>
     <script src="./scripts/media.js"></script>
