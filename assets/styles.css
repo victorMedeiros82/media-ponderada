@@ -2,45 +2,44 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+
 }
 
 body {
   background: linear-gradient(180deg, rgba(137, 94, 162, 1) 5%, rgba(197, 168, 218, 1) 40%, rgba(255, 255, 255, 1) 69%, rgba(97, 226, 192, 1) 88%);
-    width:100%;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 
 #main {
-  background-color: yellow;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  row-gap: 20px;
+  justify-content: center;
+  /* row-gap: 20px; */
 }
 
-header {
-  text-transform: uppercase;
+h1{
+  margin-bottom: 20px;
+}
+header{
+  margin-bottom: 50px;
+}
+header p{
+  font-weight: bold;
+}
+#resultado_esperado{
+  display: flex;
+  gap:20px;
 }
 
 fieldset {
-
   padding: 10px;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
-}
-
-#formulario {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+  border: 1px solid;}
 
 label {
   font-weight: bold;
@@ -56,13 +55,7 @@ label {
 }
 
 #resultadoEsperado {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  margin: 0 auto;
   background-color: red;
-}
-
-#resultadoEsperado p {
-  
+  display: flex;
+  gap: 20px;
 }
