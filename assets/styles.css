@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-
 }
 
 body {
@@ -15,12 +14,9 @@ body {
     rgba(255, 255, 255, 1) 69%,
     rgba(97, 226, 192, 1) 88%
   );
-  /* display: flex; */
   width: 90%;
   min-height: 100vh;
   margin: 0 auto;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
 #main {
@@ -28,21 +24,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* row-gap: 20px; */
 }
 
-h1{
+h1 {
   margin-bottom: 20px;
 }
-header{
+header {
   margin-bottom: 50px;
 }
-header p{
+header p {
   font-weight: bold;
 }
-#resultado_esperado{
+#resultado_esperado {
   display: flex;
-  gap:20px;
+  gap: 20px;
 }
 
 fieldset {
@@ -52,46 +47,54 @@ fieldset {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
-  border: 1px solid;}
+  border: 1px solid;
+}
 
-  label {
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-  }
-  input, input:focus, input:focus-visible {
-    height: 25px;
-    text-align: right;
-    width: 50px;
-  }
-  #formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+label {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+input,
+input:focus,
+input:focus-visible {
+  height: 25px;
+  text-align: right;
+  width: 50px;
+}
+#formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  }
-  #botao_verificar{
-    color: aliceblue;
-    font-size: 1.2em;
-    font-weight: bold;
-    height: 50px;
-    width: fit-content;
-    padding: 15px;
-    cursor:pointer;
-    background-color: rgb(25, 48, 63);
-  }
-  #botao_verificar:hover{
-    background-color: rgb(75, 108, 131);
-    color: aliceblue;
-  }
-.aprovado, .reprovado{
+#botao_verificar,
+#botao_verificar:hover {
+  color: aliceblue;
+  border: none;
+}
+
+#botao_verificar {
+  font-size: 1.2em;
+  font-weight: bold;
+  height: 50px;
+  width: fit-content;
+  padding: 15px;
+  cursor: pointer;
+  background-color: rgb(25, 48, 63);
+}
+#botao_verificar:hover {
+  background-color: rgb(75, 108, 131);
+}
+.aprovado,
+.reprovado {
   background-color: #fff;
   font-weight: bold;
   padding: 5px;
-
 }
-.aprovado{
-  color:green;}
-.reprovado{
-  color:red;
+.aprovado {
+  color: green;
+}
+.reprovado {
+  color: red;
 }
